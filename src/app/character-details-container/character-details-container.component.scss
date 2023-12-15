@@ -1,0 +1,11 @@
+:host {
+    grid-row: 1;
+    grid-column: 1 / 2;
+    display: block;
+    background-color: pink;
+}
+
+.characterDetailsContainer {
+    height: 100%;
+    grid-template: 1fr 1fr 1fr 1fr 2fr 50% / 1fr;
+}

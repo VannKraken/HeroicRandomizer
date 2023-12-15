@@ -1,0 +1,21 @@
+<div class="ContentContainer">
+    <app-character-details-container class="detailsBox">
+        <app-characterdetails></app-characterdetails>
+    </app-character-details-container>
+
+    <div class="CharacterBox gridItem">
+        <div class="CharacterBoxGrid">
+            @if(generatedCharacter.clicked){
+            <span style="font-size: 42px; text-transform: uppercase;" [style.color]="factionColor">FOR THE
+                {{generatedCharacter.faction}} !</span>
+            <br>
+            <span>You are a {{generatedCharacter.gender}}&nbsp;{{generatedCharacter.race}}
+                {{generatedCharacter.characterClass}} ready to set out on your adventure.</span>
+            <br>
+            <span>With the skills of {{generatedCharacter.gatheringProfession}} and
+                {{generatedCharacter.productionProfession}} you will forge a path through a hostile Azeroth!</span>
+            }
+            <span></span>
+        </div>
+    </div>
+</div>

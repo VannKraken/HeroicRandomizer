@@ -1,0 +1,26 @@
+:host {
+    grid-row: 1 / span 3;
+    grid-column: 2;
+    display: block;
+    background-color: red;
+}
+
+.ContentContainer {
+    display: grid;
+    grid-template: 100% / 35% 65%;
+    height: 100%;
+}
+
+.detailsBox {
+    background-color: blue;
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.CharacterBox {
+    background-color: gray;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.gridItem {
+    border: 1px solid black;
+}
